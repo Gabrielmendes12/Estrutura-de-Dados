@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"bufio"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -26,8 +27,16 @@ func main() {
 
 	leitor := bufio.NewReader(os.Stdin)
 	fmt.Print("Informe seu nome: ")
-	nome, err := leitor.ReadString('\n')
-	fmt.Println(nome, err)
+	nome, _ := leitor.ReadString('\n')
+	nome = strings.ReplaceAll(nome, "\n", "")
+	fmt.Println(nome)
+
+	// formatando dados
+	a := 4.5
+	fmt.Printf("O número de a é %.2f\n", a)
+
+	texto := fmt.Sprintf("O número de a é %.2f\n", a)
+	fmt.Println(texto)
 
 }
 
