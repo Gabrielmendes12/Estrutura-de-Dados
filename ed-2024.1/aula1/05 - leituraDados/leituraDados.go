@@ -27,7 +27,7 @@ func main() {
 
 	leitor := bufio.NewReader(os.Stdin)
 	fmt.Print("Informe seu nome: ")
-	nome, _ := leitor.ReadString('\n')
+	nome, _ = leitor.ReadString('\n')
 	nome = strings.ReplaceAll(nome, "\n", "")
 	fmt.Println(nome)
 

@@ -1,7 +1,7 @@
 package main
 
 import ("fmt"
-"math"
+		"math"
 )
 
 type Aluno struct {
