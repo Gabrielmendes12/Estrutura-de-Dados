@@ -16,10 +16,12 @@ func trocaValores (x, y float64) (float64, float64) {
 
 func main(){
 	fmt.Println(soma(4,8)) //12
-	informalidade("Alice", 25)
+	informalidade("Alice", 25) // Alice tem 25 anos
 
 	a, b := 4.4 , 8.5
 	fmt.Println(trocaValores(a,b)) // 8.5 , 4.4
+
+	anonima()
 
 }
 

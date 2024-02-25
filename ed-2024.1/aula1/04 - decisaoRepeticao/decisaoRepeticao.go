@@ -26,6 +26,7 @@ func main() {
 		fmt.Println("dia inválido")
 	}
 
+	// utilizando a instrução switch -> condição (case) e default (casos não específicos)
 	switch {
 	case idade >= 18:
 		fmt.Println("Entrada liberada")
@@ -36,17 +37,18 @@ func main() {
 	}
 
 	// Estruturas de repetição -> for
+	
 	// Comportamento do while
 	var x = 0
 	for x < 5 {
 		fmt.Println(x)
-		x++
+		x++ // variável de x incrementada
 	}
 
 	// Comportamento do for
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 10; i++ { // estrutura padrão do for (inicialização, cond de continuação e incremento na pós execução )
 		if i == 3 { continue }
-		if i == 4 { break }
+		if i == 11 { break }
 		fmt.Println(i)
 	}
 
