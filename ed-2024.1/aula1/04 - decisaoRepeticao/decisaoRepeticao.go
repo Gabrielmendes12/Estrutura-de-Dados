@@ -48,7 +48,7 @@ func main() {
 	// Comportamento do for
 	for i := 0; i < 10; i++ { // estrutura padrão do for (inicialização, cond de continuação e incremento na pós execução )
 		if i == 3 { continue }
-		if i == 11 { break }
+		if i == 4 { break }
 		fmt.Println(i)
 	}
 
