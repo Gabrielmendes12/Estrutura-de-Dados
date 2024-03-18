@@ -17,7 +17,7 @@ func Triangulo(){
 	// Atribuindo A = 7.0 , B = 5.0 , C = 7.0  -> Ao final devemos ter (A = 7.0 > B = 7.0 > C = 5.0)
     
     if A < B {
-        A, B = B, A  // troca de valores
+        A, B = B, A  // troca de valores para ordenar os lados do triângulo
     }
     if A < C {
         A, C = C, A 
